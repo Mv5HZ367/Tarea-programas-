@@ -1,0 +1,8 @@
+num = int(input("Ingresa el numero del que se quiere calcular el factorial: "))
+prod = 1
+for i in range(num +1 ):
+    if i == 0:
+        continue 
+    else:
+        prod = prod*i
+print("El factorial de", num, "es: ", prod)

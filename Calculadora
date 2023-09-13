@@ -1,0 +1,38 @@
+opc = 0
+while True:
+    print(" _____________________")
+    print("|1. Suma              |")
+    print("|2. Resta             | ")
+    print("|3. Multiplicación    |")
+    print("|4. División          |")
+    print("|5. Salir             |")
+    print("|_____________________|")
+    opc=int(input("Selecciona una operación: "))
+    if opc == 1:
+        suma = 0
+        a=float(input("Ingresa un número: "))
+        b=float(input("Ingresa un número: "))
+        suma=a+b
+        print("El resultado de la suma es: ", suma)   
+    elif opc == 2:
+        resta = 0
+        a=float(input("Ingresa un número: "))
+        b=float(input("Ingresa un número: "))
+        resta = a-b
+        print("La resta de los dos números es: ", resta)
+    elif opc == 3:
+        prod = 0
+        a=float(input("Ingresa un número: "))
+        b=float(input("Ingresa un número: "))
+        prod=a*b
+        print("El producto de los dos números es: ", prod)
+    elif opc == 4:
+        division = 0
+        a=float(input("Ingresa un número: "))
+        b=float(input("Ingresa un número: "))
+        division = a/b
+        print("La división de los dos números es: ", division)
+    elif opc == 5:
+        break
+    else: 
+        print("Opción vo válida")

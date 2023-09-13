@@ -1,0 +1,11 @@
+start=int(input("Ingresa el numero de inicio del rango de muestra de numeros primos: "))
+end = int(input("Ingresa el numero final para el rango de muestra de numeros primos: "))
+def list(num):
+    if num <2:
+        return False 
+    for i in range(2, int(num**0.5)+1):
+        if num % i == 0:
+            return False
+    return True 
+primos=[num for num in range(start, end +1)if list(num)]
+print(primos)
